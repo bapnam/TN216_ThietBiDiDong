@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".giaodien.ThongTinNhanVienActivity">
+
+    <TextView
+        style="@style/TitleStyle"
+        android:text="Thông tin nhân viên" />
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <TableRow>
+        <TextView
+            style="@style/LabelStyle"
+            android:text="Tài khoản:" />
+        <EditText
+            android:id="@+id/edt_taikhoan"
+            style="@style/TextStyle"
+            android:layout_width="0dp"
+            android:layout_weight="2" />
+    </TableRow>
+    <TableRow>
+        <TextView
+            style="@style/LabelStyle"
+            android:text="Mật khẩu:" />
+        <EditText
+            android:id="@+id/edt_matkhau"
+            style="@style/TextStyle"
+            android:inputType="textPassword"
+            android:layout_width="0dp"
+            android:layout_weight="2"/>
+    </TableRow>
+
+        <TableRow>
+            <TextView
+                style="@style/LabelStyle"
+                android:text="Quyền sử dụng:" />
+            <EditText
+                android:id="@+id/edt_quyensd"
+                style="@style/TextStyle"
+                android:layout_width="0dp"
+                android:layout_weight="2"/>
+        </TableRow>
+        <TableRow>
+            <TextView
+                style="@style/LabelStyle"
+                android:text="Điện thoại:" />
+            <EditText
+                android:id="@+id/edt_dienthoai"
+                style="@style/TextStyle"
+                android:layout_width="0dp"
+                android:layout_weight="2"/>
+        </TableRow>
+    </TableLayout>
+    <Button
+        android:id="@+id/btn_chapnhan"
+        style="@style/ButtonStyle"
+        android:layout_gravity="center"
+        android:onClick="LuuNhanVien"
+        android:text="Chấp nhận" />
+
+</LinearLayout>

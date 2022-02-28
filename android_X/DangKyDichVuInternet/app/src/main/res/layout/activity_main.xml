@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TableRow
+            android:layout_marginTop="7dp">
+            <TextView
+                style="@style/LabelStyle"
+                android:text="Gói cước"/>
+            <Spinner
+                android:id="@+id/spn_goicuoc"
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="2"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_marginTop="7dp">
+
+            <TextView
+                style="@style/LabelStyle"
+                android:text="Thanh toán:"/>
+
+            <RadioGroup
+                android:id="@+id/grp_thanhtoan"
+                android:orientation="horizontal">
+                <RadioButton
+
+                    android:id="@+id/rdo_tienmat"
+                    style="@style/LabelStyle"
+                    android:checked="true"
+                    android:text="Tiền mặt"/>
+                <RadioButton
+
+                    android:id="@+id/rdo_chuyenkhoan"
+                    style="@style/LabelStyle"
+                    android:checked="false"
+                    android:text="Chuyển khoản"/>
+            </RadioGroup>
+        </TableRow>
+
+        <TableRow
+            android:layout_marginTop="7dp">
+
+            <TextView
+                style="@style/LabelStyle"
+                android:text="Hỗ trợ"/>
+
+            <CheckBox
+                android:id="@+id/chk_truyenhinh"
+                style="@style/LabelStyle"
+                android:text="Truyền hình"/>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_marginTop="7dp">
+
+            <TextView style="@style/LabelStyle"/>
+
+            <CheckBox
+                android:id="@+id/chk_camera"
+                style="@style/LabelStyle"
+                android:text="Camera"/>
+
+        </TableRow>
+
+    </TableLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="7dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_thuchien"
+            style="@style/ButtonStyle"
+            android:onClick="DangKy"
+            android:text="Đăng ký"/>
+
+        <Button
+            android:id="@+id/btn_Dong"
+            style="@style/ButtonStyle"
+            android:onClick="Dong"
+            android:text="Đóng"/>
+    </LinearLayout>
+
+</LinearLayout>

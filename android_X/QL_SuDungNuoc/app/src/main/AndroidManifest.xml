@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="thud.ql_sudungnuoc">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/water_launcher"
+        android:label="Quản lý sử dụng nước"
+        android:roundIcon="@mipmap/water_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.QL_SuDungNuoc">
+        <activity
+            android:name=".giaodien.DangNhap_NewActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".giaodien.ThongTinNhanVienActivity"
+            android:exported="false" />
+        <activity
+            android:name=".giaodien.DangNhapActivity"
+            android:exported="false">
+
+        </activity>
+        <activity
+            android:name=".giaodien.ThongBaoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
+    </application>
+
+</manifest>

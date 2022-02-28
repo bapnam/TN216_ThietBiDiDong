@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".giaodien.DangNhapActivity">
+
+    <TextView
+        android:id="@+id/txt_dangnhap"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/TitleStyle"
+        android:layout_alignParentLeft="true"
+        android:text="Đăng Nhập Hệ Thống"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt_taikhoan"
+        style="@style/LabelStyle"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/txt_dangnhap"
+        android:text="Tài Khoản: " />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/edt_taikhoan"
+        android:layout_toRightOf="@id/txt_taikhoan"
+        android:layout_alignBaseline="@id/txt_taikhoan"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/txt_dangnhap" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt_matkhau"
+        style="@style/LabelStyle"
+        android:layout_alignParentLeft="true"
+        android:layout_alignBaseline="@id/edt_matkhau"
+        android:layout_below="@id/txt_taikhoan"
+        android:paddingLeft="5dp"
+        android:text="Mật Khẩu: "
+        android:textColor="#0000FF"/>
+
+    <EditText
+        android:id="@+id/edt_matkhau"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/edt_taikhoan"
+        android:layout_toRightOf="@+id/txt_matkhau"
+        android:layout_alignLeft="@id/edt_taikhoan"
+        android:inputType="textPassword" />
+    <Button
+        android:id="@+id/btn_dangnhap"
+        style="@style/ButtonStyle"
+        android:layout_below="@id/edt_matkhau"
+        android:layout_centerHorizontal="true"
+        android:onClick="KiemTraNguoiDung"
+        android:text="Đăng nhập" />
+</RelativeLayout>
