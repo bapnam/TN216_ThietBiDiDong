@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TableRow
+        android:layout_marginTop="7dp">
+
+        <TextView
+            style="@style/LabelStyle"
+            android:text="Thương hiệu"/>
+
+        <Spinner
+            android:id="@+id/spn_name"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="2"/>
+    </TableRow>
+
+    <TableRow
+        android:layout_marginTop="7dp"
+        android:gravity="center">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#0000FF"
+            android:text="Chức năng"/>
+    </TableRow>
+
+    <TableRow
+        android:layout_marginTop="7dp">
+
+        <CheckBox
+            android:id="@+id/chk_hd"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:checked="false"
+            android:text="Full HD"/>
+
+        <CheckBox
+            android:id="@+id/chk_3d"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:checked="false"
+            android:text="Tivi 3D"/>
+
+        <CheckBox
+            android:id="@+id/chk_smart"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:checked="false"
+            android:text="Smart TV"/>
+    </TableRow>
+
+    <TableRow
+        android:layout_marginTop="7dp"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Kích thước"
+            android:textColor="#0000FF"/>
+    </TableRow>
+
+    <RadioGroup
+        android:id="@+id/grp_size"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rdo_small"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:checked="true"
+            android:layout_weight="1"
+            android:text="32 inch"/>
+
+        <RadioButton
+            android:id="@+id/rdo_med"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:checked="false"
+            android:layout_weight="1"
+            android:text="50 inch"/>
+
+        <RadioButton
+            android:id="@+id/rdo_large"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:checked="false"
+            android:layout_weight="1"
+            android:text="100 inch"/>
+    </RadioGroup>
+
+    <TableRow
+        android:layout_marginTop="7dp">
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:text="Ngày giao"
+            android:textColor="#0000FF"/>
+
+        <TextView
+            android:id="@+id/txt_date"
+            style="@style/LabelStyle"
+            android:layout_weight="2"
+            android:onClick="ChonNgay"/>
+    </TableRow>
+
+    <TableRow
+        android:layout_marginTop="7dp"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/img_tivi"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:contentDescription="Hình Tivi"
+            android:scaleType="centerCrop"
+            android:gravity="center"
+            android:onClick="DongActivity"
+            android:src="@mipmap/tivi_samsung"/>
+    </TableRow>
+
+    <TableRow
+        android:layout_marginTop="7dp"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/btn_choose"
+            style="@style/ButtonStyle"
+            android:onClick="ChonMua"
+            android:text="Đồng ý"/>
+    </TableRow>
+
+</TableLayout>
