@@ -10,6 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.QL_SuDungNuoc">
         <activity
+            android:name=".giaodien.MainActivity_GridView"
+            android:exported="false" />
+        <activity
+            android:name=".giaodien.MainActivity_ListView"
+            android:exported="false" />
+        <activity
             android:name=".giaodien.DangNhap_NewActivity"
             android:exported="true">
             <intent-filter>
@@ -23,9 +29,7 @@
             android:exported="false" />
         <activity
             android:name=".giaodien.DangNhapActivity"
-            android:exported="false">
-
-        </activity>
+            android:exported="false" />
         <activity
             android:name=".giaodien.ThongBaoActivity"
             android:exported="false" />

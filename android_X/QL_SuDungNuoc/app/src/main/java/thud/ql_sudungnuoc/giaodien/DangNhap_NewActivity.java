@@ -53,7 +53,7 @@ public class DangNhap_NewActivity extends AppCompatActivity {
             Toast.makeText(this, "Đăng nhập thành công!",
                     Toast.LENGTH_LONG).show();
             finish();
-            Intent intent = new Intent(this, ThongTinNhanVienActivity.class);
+            Intent intent = new Intent(this, MainActivity_GridView.class);
             startActivity(intent);
         }else{
             Toast.makeText(this, "Lỗi tài khoản hoặc mật khẩu không đúng!",

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/spn_loaixe"
+        android:layout_marginTop="7dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edt_dongia"
+        style="@style/TextStyle"
+        android:enabled="false"
+        android:hint="Đơn Giá"
+        android:textColor="#0000FF"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt_ngaybd"
+        style="@style/LabelStyle"
+        android:text="Ngày bắt đầu: "
+        android:onClick="ChonNgay"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/Layout_songay"
+        app:endIconMode="clear_text">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/edt_songay"
+            style="@style/TextStyle"
+            android:background="@color/white"
+            android:hint="Số ngày thuê"
+            android:inputType="number"
+            android:textColor="#0000FF"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <CheckBox
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/chk_taixe"
+        style="@style/LabelStyle"
+        android:text="Thuê tài xế"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edt_sotien"
+        style="@style/TextStyle"
+        android:enabled="false"
+        android:hint="Số tiền"
+        android:textColor="#0000FF"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_tinhtien"
+            style="@style/ButtonStyle"
+            android:onClick="TinhTien"
+            android:text="Tính tiền"/>
+
+        <Button
+            android:id="@+id/btn_thuexe"
+            style="@style/ButtonStyle"
+            android:onClick="DatThue"
+            android:text="Đặt Thuê"/>
+
+        <Button
+            android:id="@+id/btndong"
+            style="@style/ButtonStyle"
+            android:onClick="DongActivity"
+            android:text="Đóng"/>
+    </LinearLayout>
+
+</LinearLayout>
