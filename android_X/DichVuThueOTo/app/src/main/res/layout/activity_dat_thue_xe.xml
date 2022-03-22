@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".DatThueXe">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/layout_hotenkh"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+        app:endIconMode="clear_text" >
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edt_hotenkh"
+            style="@style/TextStyle"
+            android:hint="Họ tên khách hàng"
+            android:background="@color/white"
+            android:textColor="#0000FF" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/layout_dienthoai"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+        app:endIconMode="clear_text" >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edt_dienthoai"
+            style="@style/TextStyle"
+            android:hint="Số điện thoại"
+            android:background="@color/white"
+            android:textColor="#0000FF" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <RadioGroup
+        android:id="@+id/grp_thanhtoan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <RadioButton
+            android:id="@+id/rdo_tienmat"
+            style="@style/LabelStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="Tiền mặt" />
+        <RadioButton
+            android:id="@+id/rdo_chuyenkhoan"
+            style="@style/LabelStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:text="Chuyển khoản" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/txt_thongtin"
+        style="@style/LabelStyle"
+        android:text="Thông tin đặt thuê xe:" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/btn_xacnhan"
+            style="@style/ButtonStyle"
+            android:onClick="XacNhanThueXe"
+            android:text="Xác nhận" />
+        <Button
+            android:id="@+id/btn_huybo"
+            style="@style/ButtonStyle"
+            android:onClick="HuyBo"
+            android:text="Hủy bỏ" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,20 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="thud.dichvuthueoto">
+    package="thud.dangkytour">
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcheroto"
-        android:label="Dịch vụ cho thuê xe"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.DichVuThueOTo">
-        <activity
-            android:name=".XacNhanThueXe"
-            android:exported="false" />
-        <activity
-            android:name=".DatThueXe"
-            android:exported="false" />
+        android:theme="@style/Theme.DangKyTour">
         <activity
             android:name=".MainActivity"
             android:exported="true">
