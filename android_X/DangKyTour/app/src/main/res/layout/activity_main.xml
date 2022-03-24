@@ -1,18 +1,126 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:orientation="vertical">
 
-    <TextView
-        android:layout_width="wrap_content"
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:id="@+id/layout_hotenKH"
+        android:layout_marginTop="7dp"
+        app:endIconMode="clear_text">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/edt_hotenKH"
+            style="@style/TextStyle"
+            android:background="@color/white"
+            android:textColor="#0000FF"
+            android:hint="Nhập họ tên khách hàng"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/layout_emailKH"
+        app:endIconMode="clear_text"
+        android:layout_marginTop="7dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/edt_emailKH"
+            style="@style/TextStyle"
+            android:inputType="textEmailAddress"
+            android:background="@color/white"
+            android:textColor="#0000FF"
+            android:hint="Nhập địa chỉ email"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/spn_loaitour"
+        android:layout_marginTop="7dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edt_dongia"
+        style="@style/TextStyle"
+        android:enabled="false"
+        android:textColor="#0000FF"
+        android:hint="Đơn giá"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/layout_sokhach"
+        android:layout_marginTop="7dp"
+        app:endIconMode="clear_text">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/edt_sokhach"
+            style="@style/TextStyle"
+            android:inputType="number"
+            android:textColor="#0000FF"
+            android:background="@color/white"
+            android:hint="Số khách"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/grp_thanhtoan"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rdo_tienmat"
+            style="@style/LabelStyle"
+            android:checked="true"
+            android:hint="Tiền mặt"/>
+
+        <RadioButton
+            android:id="@+id/rdo_chuyenkhoan"
+            style="@style/LabelStyle"
+            android:checked="false"
+            android:hint="Chuyển khoản"/>
+    </RadioGroup>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edt_sotien"
+        style="@style/TextStyle"
+        android:enabled="false"
+        android:textColor="#0000FF"
+        android:hint="Số tiền"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_dangky"
+            style="@style/ButtonStyle"
+            android:text="Đăng ký"
+            android:onClick="DangKy"/>
+
+        <Button
+            android:id="@+id/btn_dong"
+            style="@style/ButtonStyle"
+            android:text="Đóng"
+            android:onClick="DongActivity"/>
+    </LinearLayout>
+
+</LinearLayout>
