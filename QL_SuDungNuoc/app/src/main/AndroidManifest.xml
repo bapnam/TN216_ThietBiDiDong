@@ -1,19 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="thud.thongtinsanpham">
-
-    <uses-permission android:name="android.permission.CAMERA" />
-    <uses-feature android:name="android.hardware.camera"
-        android:required="false"/>
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    package="thud.ql_sudungnuoc">
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_product"
-        android:label="Thông tin sản phẩm"
-        android:roundIcon="@mipmap/ic_product_round"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.ThongTinSanPham">
+        android:theme="@style/Theme.QL_SuDungNuoc">
         <activity
             android:name=".MainActivity"
             android:exported="true">

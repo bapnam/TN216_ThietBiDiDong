@@ -10,6 +10,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.QL_SuDungNuoc">
         <activity
+            android:name=".dulieu.MainActivity_Custom_GridView"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
             android:name=".giaodien.MainActivity_GridView"
             android:exported="false" />
         <activity
