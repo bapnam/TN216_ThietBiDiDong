@@ -4,13 +4,34 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
-        android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:icon="@mipmap/ic_water"
+        android:label="Quản lý xử dụng nước"
+        android:roundIcon="@mipmap/ic_water_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.QL_SuDungNuoc">
         <activity
-            android:name=".MainActivity"
+            android:name=".giaodien.DanhSachKhachHangActivity"
+            android:exported="false" />
+        <activity
+            android:name=".giaodien.ThongTinKhachHangActivity"
+            android:exported="false" />
+        <activity
+            android:name=".giaodien.MainActivity_GridView"
+            android:exported="false" />
+        <activity
+            android:name=".giaodien.MainActivity_ListView"
+            android:exported="false" />
+        <activity
+            android:name=".giaodien.ThongTinNhanVienActivity"
+            android:exported="false" />
+        <activity
+            android:name=".giaodien.DangNhapActivity"
+            android:exported="false" />
+        <activity
+            android:name=".giaodien.ThongBaoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".giaodien.DangNhap_NewActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -18,6 +39,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
     </application>
 
 </manifest>

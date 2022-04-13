@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".giaodien.DanhSachKhachHangActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            style="@style/LabelStyle"
+            android:layout_weight=".7"
+            android:gravity="center"
+            android:text="STT"
+            android:textIsSelectable="false"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            style="@style/LabelStyle"
+            android:layout_weight="3"
+            android:layout_gravity="center"
+            android:textIsSelectable="false"
+            android:text="Họ và tên"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            style="@style/LabelStyle"
+            android:layout_weight="1.6"
+            android:gravity="center"
+            android:textIsSelectable="false"
+            android:text="Thanh toán"/>
+
+    </LinearLayout>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:id="@+id/lst_khachhang"
+        android:layout_weight="1"
+        android:choiceMode="singleChoice"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_them"
+            style="@style/ButtonStyle"
+            android:onClick="ThemKhachHang"
+            android:text="Thêm"/>
+
+        <Button
+            android:id="@+id/btn_chinhsua"
+            style="@style/ButtonStyle"
+            android:onClick="ChinhSuaKhachHang"
+            android:text="Chỉnh sửa"/>
+
+        <Button
+            android:id="@+id/btn_xoa"
+            style="@style/ButtonStyle"
+            android:onClick="XoaKhachHang"
+            android:text="Xóa"/>
+    </LinearLayout>
+
+</LinearLayout>

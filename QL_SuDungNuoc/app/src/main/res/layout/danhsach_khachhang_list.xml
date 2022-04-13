@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:id="@+id/layout_dskhachhang">
+
+    <TextView
+        android:id="@+id/txt_stt"
+        style="@style/TextStyle"
+        android:layout_width="0dp"
+        android:layout_weight=".7"
+        android:gravity="center"
+        android:textIsSelectable="false" />
+
+    <TextView
+        android:id="@+id/txt_hoten"
+        style="@style/TextStyle"
+        android:layout_width="0dp"
+        android:layout_weight="3"
+        android:layout_marginLeft="16dp"
+        android:textIsSelectable="false" />
+
+    <ImageView
+        android:id="@+id/img_thanhtoan"
+        android:layout_width="0dp"
+        android:layout_height="20sp"
+        android:layout_weight="1.6"
+        android:contentDescription="Hình thức thanh toán"
+        android:gravity="center" />
+
+</LinearLayout>
